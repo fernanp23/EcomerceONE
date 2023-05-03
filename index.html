@@ -1,252 +1,130 @@
 <!DOCTYPE html>
-<html lang="es-Co">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="icon" href="./assets/img/geek_vector.svg">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/header/header.css">
-    <link rel="stylesheet" href="./assets/css/main/banner.css">
-    <link rel="stylesheet" href="./assets/css/main/carrousel.css">
-    <link rel="stylesheet" href="./assets/css/footer/form__contact.css">
-    <link rel="stylesheet" href="./assets/css/footer/footer.css">
-    <title>Alura-Geek</title>
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/rodapie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ecommerce ONE</title>
 </head>
 
 <body>
-    <!---Header--->
-    <header class="container">
-        <nav class="container___nav">
-            <p class="container__nav___logo">
-                <img src="./assets/img/control.svg" alt="logo-alura-geek"> Alura<span>Geek</span>
-            </p>
-            <div class="container__nav___searchInput">
-                <input class="nav__searchInput___input" type="text" placeholder="¿Que deseas Buscar?" name="search">
-                <a href="" class="nav__searchInput___submit"><img src="./assets/img/search.svg" alt="search-icon"></a>
-            </div>
-            <a href="./login.html" class="btn btn-primary">Login</a>
-        </nav>
+    <header class="header container">
+        <div class="header_info">
+            <a href="./index.html"><img class="header__logo" src="./assets/img/Logo.svg" alt="logo de alura geek"></a>
+            <input class="header__input" type="text" placeholder="¿Que deseas buscar?" data-buscador>
+            <img class="header__lupa" src="./assets/img/lupa.svg" alt="lupa">
+        </div>
+        <a class="header__boton" href="./screens/login.html">Login</a>
+        <img class="header__lupa-mobile" src="./assets/img/lupa-mobile.svg" alt="lupa">
     </header>
-    <!---Main section-->
     <main>
-        <!---Banner--->
-        <section class="container-full">
-            <div class="section__banner" style="background:url(./assets/img/banner-image.png);background-repeat: no-repeat; background-position: center;background-size:cover;">
-                <div class="section__banner___about">
-                    <div class="section__baner___content">
-                        <h2 class="section__banner___about__h2">¡Octubre de Promociones!</h2>
-                        <p class="section__banner___about__p">Compra estos increibles juegos con un 25% de descuento</p>
-                        <button class="btn btn-secondary">Ver Juegos</button>
+
+
+        <!-- BANNER -->
+
+
+        <section class="banner">
+            <div class="banner__contenido container">
+                <h1 class="banner__titulo">Mayo Promocional</h1>
+                <p class="banner__texto">Productos seleccionados con 33% de descuento</p>
+                <a class="banner__boton" href="#consolas">Ver Consolas</a>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        
+
+        <section class="seccion__productos">
+            <div class="productos container">
+                <div class="star_wars">
+                    <div class="star_wars__head">
+                        <h1 class="star_wars__head__titulo-principal">Star Wars</h1>
+                        <a class="star_wars__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-star-wars>
+
                     </div>
                 </div>
-            </div>
-            <div class="section__banner" style="background:url(./assets/img/banner__2.jpg);background-repeat: no-repeat; background-position: center;background-size:cover; display: none;">
-                <div class="section__banner___about">
-                    <div class="section__baner___content">
-                        <h2 class="section__banner___about__h2">Obten Increibles Promociones</h2>
-                        <p class="section__banner___about__p">Recibe increibles bonos de descuentos para tus proximas compras</p>
-                        <button class="btn btn-secondary">Ver Juegos</button>
+                <div id="consolas" class="consolas">
+                    <div class="consolas__head">
+                        <h1 class="consolas__head__titulo-principal">Consolas</h1>
+                        <a class="consolas__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-consolas>
+
                     </div>
                 </div>
-            </div>
-            <div class="section__banner" style="background:url(./assets/img/banner__3.jpg);background-repeat: no-repeat; background-position: center;background-size:cover; display: none;">
-                <div class="section__banner___about">
-                    <div class="section__baner___content">
-                        <h2 class="section__banner___about__h2">Increible Catalogo</h2>
-                        <p class="section__banner___about__p">Encuentra un increible catalogo de Juegos</p>
-                        <button class="btn btn-secondary">Ver Juegos</button>
+                <div class="diversos">
+                    <div class="diversos__head">
+                        <h1 class="diversos__head__titulo-principal">Diversos</h1>
+                        <a class="diversos__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-diversos>
+
                     </div>
                 </div>
             </div>
         </section>
-        <!---Carrousel 1--->
-        <section class="container">
-            <div class="carrousel__articles">
-                <div class="carrousel__articles___title">
-                    <h3 class="carrousel__articles___title__h3">Consolas</h3>
-                    <a class="carrousel__articles___link" href="">Ver Todo ➜</a>
+
+        <!-- CONTACTO -->
+
+        <section class="footer">
+            <div class="contenido__footer container">
+                <div class="contenido__footer_info">
+                    <a href="./index.html"><img class="header__logo" src="./assets/img/Logo.svg"
+                            alt="logo de alura geek"></a>
+                    <ul class="footer_links">
+                        <li class="footer__enlace"><a href="./screens/error404.html">Quienes somos</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Politica de privacidad</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Programa de fidelidad</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Nuestras Tiendas</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Quiero ser franquiciado</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Anuncie aqui</a></li>
+                    </ul>
                 </div>
-                <div class="carrousel__articles___post">
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/xbox.jpg" alt="imagen-promocional-xbox">
-                        <p>Xbox Series X</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/nds.jpg" alt="imagen-promocional-nds">
-                        <p>NintendoDS</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/ps3.jpg" alt="imagen-promocional-ps3">
-                        <p>Play Station 3</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/ps4.jpg" alt="imagen-promocional-ps4">
-                        <p>Play Station 4</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/psp.jpeg" alt="imagen-promocional-psp">
-                        <p>Sony PSP</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/switch.jpg" alt="imagen-promocional-nintendo-switch">
-                        <p>Nintendo Switch</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!---Carrousel 2--->
-        <section class="container">
-            <div class="carrousel__articles">
-                <div class="carrousel__articles___title">
-                    <h3 class="carrousel__articles___title__h3">Juegos</h3>
-                    <a class="carrousel__articles___link" href="">Ver Todo ➜</a>
-                </div>
-                <div class="carrousel__articles___post">
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/clashRoyale.jpg" alt="imagen-promocional-clash-royale">
-                        <p>Clash Of Royale</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/fornite.jpg" alt="imagen-promocional-fornite">
-                        <p>Fornite</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/minionRush.jpg" alt="imagen-promocional-minionRush">
-                        <p>Minion Rush</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/haloInfinite.jpg" alt="imagen-promocional-haloInfinite">
-                        <p>Halo Infinite</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/callOfDuty.jpg" alt="imagen-promocional-callOfDuty">
-                        <p>Call Of Duty</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/streetFigther.jpeg" alt="imagen-promocional-streetFigther">
-                        <p>Street Figther</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!---Carrousel 3--->
-        <section class="container">
-            <div class="carrousel__articles">
-                <div class="carrousel__articles___title">
-                    <h3 class="carrousel__articles___title__h3">Accesorios</h3>
-                    <a href="" class="carrousel__articles___link">Ver Todo ➜</a>
-                </div>
-                <div class="carrousel__articles___post">
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/mause.jpg" alt="imagen-promocional-mauseGamer">
-                        <p>Mause Gamer</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/audifonos.jpg" alt="imagen-promocional-audifonos">
-                        <p>Audifonos</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/silla.jpg" alt="imagen-promocional-sillaGamer">
-                        <p>Silla Gamer</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/teclado.jpg" alt="imagen-promocional-tecladoGamer">
-                        <p>Teclado Gamer</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/miniPortatil.jpg" alt="imagen-promocional-miniPortatil">
-                        <p>Mini Portatil</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
-                    <article class="carrousel__articles___item">
-                        <img class="carrousel__articles___item__img" src="./assets/img/pcGamer.jpg" alt="imagen-promocional-pcGamer">
-                        <p>PC Gamer</p>
-                        <p>$0.000</p>
-                        <a class="carrousel__articles___link" href="./view__Products.html">Ver Producto</a>
-                    </article>
+                <div class="footer_formulario">
+                    <h3 class="footer_formulario__titulo">Hable con nosotros</h2>
+                        <form action="">
+                            <div class="formulario__input-container">
+                                <input name="nombre" id="nombre" class="input inputs" type="text" placeholder=""
+                                    required data-tipo="nombre">
+                                <label class="input-label" for="nombre">Nombre</label>
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <div class="formulario__textarea-container">
+                                <textarea name="mensaje" id="mensaje" class="textarea inputs" rows="5" type="text"
+                                    placeholder="" required data-tipo="mensaje"></textarea>
+                                <label class="input-label" for="mensaje">Escribe tu mensaje</label>
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <input class="boton-form" type="submit" name="enviar" id="enviar" value="Enviar Mensaje">
+                        </form>
                 </div>
             </div>
         </section>
     </main>
-    <!---Footer--->
-    <footer class="container-full">
-        <div class="div__footer">
-            <div class="div__footer___information">
-                <div class="div__footer___content">
-                    <p class="container__nav___logo">
-                        <img src="./assets/img/control.svg" alt="logo-alura-geek"> Alura<span>Geek</span>
-                    </p>
-                    <div class="div__footer___contact">
-                        <a href="">Quienes Somos</a>
-                        <a href="">Politicas de Privacidad</a>
-                        <a href="">Programa de Fidelidad</a>
-                        <a href="">Nuestras Tiendas</a>
-                        <a href="">Quiero ser franquiciado</a>
-                        <a href="">Anuncie Aqui</a>
-                    </div>
-                </div>
-                <div class="div__footer___form">
-                    <h3>Hable con nosotros</h3>
-                    <div class="div__footer___input">
-                        <label for="name">Nombre </label>
-                        <input class="input__verification" type="text" name="name" required>
-                    </div>
-                    <div class="div__footer___input">
-                        <label for="message">Escribe Tu Mensaje </label>
-                        <textarea class="input__verification" name="text" id="" required></textarea>
-                    </div>
-                    <input type="submit" class="btn btn-secondary" value="Enviar">
-                </div>
-            </div>
-        </div>
-        <div class="div__footer___copyright">
-            <p>Desarrollado por Fernando Peña</p>
-            <small>
-                Todos los derechos reservados 2023
-            </small>
-        </div>
+
+    <!-- FOOTER -->
+
+    <footer class="rodapie">
+        <p class="rodapie__texto">Desarrollado por Fernando Peña</p>
+        <p class="rodapie__texto">2023</p>
     </footer>
-    <script src="./assets/js/validateForm.js"></script>
-    <script src="./assets/js/slider.js"></script>
+
+    <script src="/controllers/busqueda.controller.js" type="module"></script>
+    <script src="./controllers/client.controller.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
 </body>
-<!--/*
-  Fernando Peña
-  Challenge Alura Latam
-  Oracle One Next Education*/-->
 
 </html>
